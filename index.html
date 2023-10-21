@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <form id="registration-form" action="" method="">
+        <h1 style="color: brown;">USER REGISTRATION</h1>
+        <div class="forms">
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            <input type="text" id="middle-name" name="middle-name" placeholder="Middle Name " required>
+           
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+        </div>
+        <div class="forms">
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="forms">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <div class="forms">
+            <input type="date" id="dob" name="dob" required>
+        </div><br>
+        <div class="forms">
+            <label>Gender:</label>
+            <div style="display: flex; padding-left: 5%;">
+                <input type="radio" id="male" name="gender" value="Male" required>Male
+            
+            <input type="radio" id="female" name="gender" value="Female" required>Female
+           
+            <input type="radio" id="other" name="gender" value="Other" required>Other
+           </div>
+        </div><br>
+        <div class="forms" style="font-size: medium;">
+            <label for="photo">Profile Photo</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="" required>
+        </div><br>
+        <div class="forms">
+            
+            <label for="terms-conditions">
+                <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                I agree to the 
+                <span style="color: blue;">
+                    Terms
+                </span>and
+                <span style="color: blue;">
+                    Conditions
+                </span></label>
+        </div>
+        <div class="forms">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
